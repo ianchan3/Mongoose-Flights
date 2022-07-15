@@ -3,10 +3,20 @@
 <h2>Enter a New Movie</h2>
 <form action="/flights" method="POST">
   <label>Airlines:
-    <input type="text" name="Airlines">
+    <select name="Airlines" selected>
+      <option value="Delta">Delta</option>
+      <option value="United">United</option>
+      <option value="American">American</option>
+      <option value="Southwest">Southwest</option>
+    </select>
   </label><br>
-  <label>Airport:
-    <input type="text" name="airport">
+  <label>Airport
+    <select name="Airport" selected>
+      <option value="SFO">SFO</option>
+      <option value="DEN">DEN</option>
+      <option value="LAX">LAX</option>
+      <option value="JFK">JFK</option>
+    </select>
   </label><br>
   <label>FlightNo:
     <input type="number" name="Flight No">
