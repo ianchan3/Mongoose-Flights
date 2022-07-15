@@ -1,0 +1,20 @@
+<%- include('../partials/header') %>
+
+<h2>Enter a New Movie</h2>
+<form action="/flights" method="POST">
+  <label>Airlines:
+    <input type="text" name="Airlines">
+  </label><br>
+  <label>Airport:
+    <input type="text" name="airport">
+  </label><br>
+  <label>FlightNo:
+    <input type="number" name="Flight No">
+  </label><br>
+  <label>Departs:
+    <input type="datetime-local" name="Departs">
+  </label><br>
+
+</form>
+
+<%- include('../partials/footer') %>
