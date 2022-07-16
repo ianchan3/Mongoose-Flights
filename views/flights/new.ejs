@@ -10,6 +10,7 @@
       <option value="Southwest">Southwest</option>
     </select>
   </label><br>
+  <br>
   <label>Airport
     <select name="Airport" selected>
       <option value="SFO">SFO</option>
@@ -17,10 +18,13 @@
       <option value="LAX">LAX</option>
       <option value="JFK">JFK</option>
     </select>
-  </label><br>
+  </label>
+  <br>
+  <br>
   <label>Flight No:
-    <input type="number" name="Flight No">
+    <input type="text" required pattern="[A-Z][0-9][0-9][0-9]" name="Flight No"> 
   </label><br>
+  <br>
   <label>Departs:
     <input type="datetime-local" name="Departs">
   </label><br>
