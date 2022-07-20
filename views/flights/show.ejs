@@ -66,16 +66,22 @@
   <h5>No Destinations Yet</h5>
 <% } %>
 
-<form id="add-ticket-form" action="/tickets/<%= flight._id %>" method="POST">
-  <label>Seat:</label>
-  <input type="text" name="seat">
-  <label>Flight:</label>
-  <input type="text" name="flight">
-  <label>Price:</label>
-  <input type="text" name="price">
-  <input type="submit" value="Add Tickets">
-</form>
-
+<h2>Purchase a Ticket</h2>  
+  <button><a href="/flights/<%= flight._id %>/tickets/new"> Buy A Ticket</a></button>
+  <table>
+    <tbody>
+      <thead>
+        <th>Seat</th>
+        <th>Price</th>
+      </thead>
+      <% tickets.forEach(function(t) { %>
+        <tr>
+          <td><%= t.seat %></td>
+          <td><%= t.price %></td>
+        </tr>
+        <% }) %>
+    </tbody>
+    </table>
 <%- include('../partials/footer') %>
 
 
