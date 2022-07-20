@@ -13,8 +13,8 @@
 </section>
 
 <br><br><h2>Destinations</h2><br>
-<form id="add-review-form" method="POST"
-  action="/destinations/<%= flight._id %>">
+<form id="add-ticket-form" method="POST"
+  action="/flights/<%= flight._id %>/destinations">
   <label>Airline:</label>
   <select name="airline">
     <option value="Delta">Delta</option>
