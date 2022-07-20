@@ -7,6 +7,7 @@ body {
 
 a {
   color: blue;
+  text-align: center;
 }
 
 nav > a {
@@ -24,4 +25,34 @@ nav > a:hover:not(.active) {
 nav > a.active {
   color: yellow;
   cursor: default;
+}
+
+table {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid;
+}
+
+td, th {
+  background-color: blue;
+  color: yellow;
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+  text-align: left;
+  padding: 0.5em 1em;
+}
+
+table {
+  font-size: 20px;
+}
+
+table, thead, th {
+  padding: 5px;
+  border-bottom: 2px solid lightblue;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
 }
